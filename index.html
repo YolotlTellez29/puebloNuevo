@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro Pueblo Bueno</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-2xl">
+    <div class="flex justify-center mb-6">
+      <img src="img/logo.jpg" alt="Logo" class="h-24">
+    </div>    
+    <h1 class="text-2xl font-bold mb-6 text-center">Formulario de Registro</h1>  
+    <form class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Nombres" class="input" required>
+        <input type="text" placeholder="Apellido Paterno" class="input" required>
+        <input type="text" placeholder="Apellido Materno" class="input" required>
+        <select class="input" required>
+          <option value="Genero">Género</option>
+          <option>Mujer</option>
+          <option>Hombre</option>
+          <option>Otro</option>
+        </select>
+        <input type="date" placeholder="Fecha de Nacimiento" class="input" required>
+        <input type="text" placeholder="CURP" class="input" required>
+        <input type="text" placeholder="Clave de Elector" class="input" required>
+        <input type="tel" placeholder="Teléfono (10 dígitos)" class="input" required>
+        <input type="email" placeholder="Email" class="input" required>
+        <select class="input" required>
+          <option value="">País</option>
+          <option>México</option>
+          <option>Otro</option>
+        </select>
+        <input type="text" placeholder="Entidad Federativa" class="input" required>
+        <input type="text" placeholder="Municipio" class="input" required>
+        <input type="text" placeholder="Colonia" class="input" required>
+        <input type="text" placeholder="Código Postal" class="input" required>
+        <input type="text" placeholder="Calle" class="input" required>
+        <input type="text" placeholder="Número Exterior" class="input" required>
+        <input type="text" placeholder="Número Interior" class="input">
+      </div>
+
+      <div class="space-y-2">
+        <label class="block font-medium">¿Deseas participar activamente?</label>
+        <select class="input" required>
+          <option value="">Seleccione una opción</option>
+          <option>Miembro activo</option>
+          <option>Voluntario</option>
+          <option>Brigadista</option>
+          <option>No, solo quiero recibir información</option>
+          <option>Otro</option>
+        </select>
+
+        <label class="block font-medium">¿En qué área te gustaría contribuir?</label>
+        <select class="input" required>
+          <option value="">Seleccione un área</option>
+          <option>Organización y Logística</option>
+          <option>Comunicación y Medios</option>
+          <option>Capacitación y Formación Política</option>
+          <option>Financiamiento y Recaudación</option>
+          <option>Derechos Humanos y Justicia Social</option>
+          <option>Otro</option>
+        </select>
+
+        <textarea placeholder="¿Por qué le gustaría participar en PUEBLO BUENO?" class="input h-24" required></textarea>
+
+        <label class="block font-medium">¿Ha participado en algún Partido Político?</label>
+        <select class="input" required>
+          <option value="">Seleccione una opción</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+
+        <label class="block font-medium">En caso afirmativo, ¿cuál o cuáles?</label>
+        <select class="input">
+          <option value="">Seleccione</option>
+          <option>MORENA</option>
+          <option>PRI</option>
+          <option>PAN</option>
+          <option>PRD</option>
+          <option>MOVIMIENTO CIUDADANO</option>
+          <option>FUERZA POR MÉXICO</option>
+          <option>Otro</option>
+        </select>
+
+        <label class="block font-medium">¿Le interesa recibir información por WhatsApp?</label>
+        <select class="input" required>
+          <option value="">Seleccione una opción</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+
+        <label class="block font-medium">¿Con qué frecuencia?</label>
+        <select class="input" required>
+          <option value="">Seleccione frecuencia</option>
+          <option>1 mensaje al día</option>
+          <option>3 mensajes por semana</option>
+          <option>1 mensaje por semana</option>
+          <option>1 mensaje por mes</option>
+          <option>No deseo recibir información</option>
+        </select>
+
+        <div class="flex items-center gap-2">
+          <input type="checkbox" required>
+          <label>He leído y acepto los Términos y Condiciones.</label>
+        </div>
+
+        <input type="text" placeholder="Enlace (Nombre de quien te invitó)" class="input" required>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700">Enviar</button>
+    </form>
+  </div>
+
+  <style>
+    .input {
+      @apply w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400;
+    }
+  </style>
+</body>
+</html>
